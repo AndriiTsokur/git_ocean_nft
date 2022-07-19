@@ -1,0 +1,37 @@
+img {
+	&.nft_logo {
+		width: 17px;
+		margin-right: 10px;
+		box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+		backdrop-filter: blur(212.248px);
+	}
+}
+
+a {
+	&.navbar-brand, &.nav-link,
+	&:focus.navbar-brand, &:focus.nav-link {
+		color: rgba(255, 255, 255, 60%);
+
+		font: {
+			family: $font_orbitron;
+			size: calc(20rem / 16);
+		}
+	}
+
+	&:hover.navbar-brand {
+		color: rgba(255, 255, 255, 60%);
+		filter: blur(.5);
+	}
+
+	&:hover.nav-link {
+		color: rgba(255, 255, 255, 100%);
+	}
+}
+
+span.nft_brand {
+	color: rgba(255, 255, 255, 100%);
+}
+
+.nft_spacer {
+	width: 16.2%;
+}

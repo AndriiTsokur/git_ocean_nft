@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Alethia Next";
+  src: url("../fonts/alethia-next/alethianext-light.eot"), url("../fonts/alethia-next/alethianext-light.eot?#iefix") format("embedded-opentype"), url("../fonts/alethia-next/alethianext-light.otf") format("opentype"), url("../fonts/alethia-next/alethianext-light-webfont.woff") format("woff"), url("../fonts/alethia-next/alethianext-light-webfont.woff2") format("woff2"), url("../fonts/alethia-next/alethianext-light.ttf") format("truetype");
+}
+img.nft_logo {
+  width: 17px;
+  margin-right: 10px;
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  -webkit-backdrop-filter: blur(212.248px);
+          backdrop-filter: blur(212.248px);
+}
+
+a.navbar-brand, a.nav-link, a:focus.navbar-brand, a:focus.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+}
+a:hover.navbar-brand {
+  color: rgba(255, 255, 255, 0.6);
+  filter: blur(0.5);
+}
+a:hover.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+span.nft_brand {
+  color: rgb(255, 255, 255);
+}
+
+.nft_spacer {
+  width: 16.2%;
+}
+
+.hero {
+  margin-top: 105px;
+}
+.hero h1 {
+  color: rgb(255, 255, 255);
+  line-height: 137.4%;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4.125rem;
+  font-weight: 500;
+}
+.hero span {
+  background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.hero p {
+  color: rgb(255, 255, 255);
+}
+.hero p.nft_intro {
+  line-height: 2.75rem;
+  margin: 21px 0 43px 0;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6875rem;
+}
+.hero p.nft_counter {
+  padding-top: 1px;
+  margin-bottom: -16px;
+  font-family: "Aldrich", sans-serif;
+  font-size: 2.5rem;
+}
+.hero p.nft_counter_subject {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-family: "Alethia Next", sans-serif;
+  font-size: 1.125rem;
+}
+
+.nft_polygon_block {
+  display: flex;
+}
+
+a.nft_create {
+  background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 1.1rem;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+a.nft_create:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.nft_counter_border_right {
+  border-right: solid 1px rgba(255, 255, 255, 0.26);
+}
+
+.nft_polygon_shadow {
+  float: left;
+  margin: -17.5px 0 0 -23px;
+  width: 300px;
+  height: 100px;
+  border-radius: 150px/50px;
+  background-color: rgba(255, 86, 246, 0.51);
+  filter: blur(107px);
+}
+
+.nft_polygon {
+  position: relative;
+  -webkit-clip-path: polygon(0 22px, 0 65px, 212px 65px, 254px 43px, 254px 0, 42px 0);
+          clip-path: polygon(0 22px, 0 65px, 212px 65px, 254px 43px, 254px 0, 42px 0);
+  width: 254px;
+  height: 65px;
+  background: linear-gradient(-272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nft_polygon1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(2px 23px, 2px 63px, 211px 63px, 252px 42px, 252px 2px, 42px 2px);
+          clip-path: polygon(2px 23px, 2px 63px, 211px 63px, 252px 42px, 252px 2px, 42px 2px);
+  background: linear-gradient(92.23deg, #406AFF 0%, #3BACE2 0%, #B936EE 50%, #FF56F6 79%);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  text-align: right;
+}
+
+.nft_explore {
+  display: flex;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 32px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 2.2% 0;
+  background-color: rgb(1, 32, 76);
+  background-image: url("../img/bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */

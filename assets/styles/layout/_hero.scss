@@ -1,0 +1,85 @@
+.hero {
+	margin-top: 105px;
+
+  	h1 {
+		color: rgb(255, 255, 255);
+		line-height: 137.4%;
+
+		font: {
+			family: $font_spartan;
+			size: calc(66rem / 16);
+			weight: 500;
+		}
+  	}
+
+  	span {
+		background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+		color: transparent;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+
+	p {
+		color: rgb(255, 255, 255);
+		
+		&.nft_intro {
+			line-height: calc(44rem / 16);
+			margin: 21px 0 43px 0;
+
+			font: {
+				family: $font_rajdhani;
+				size: calc(27rem / 16);
+			}
+		}
+
+		&.nft_counter {
+			padding-top: 1px;
+			margin-bottom: -16px;
+
+			font: {
+				family: $font_aldrich;
+				size: calc(40rem / 16);
+			}
+		}
+
+		&.nft_counter_subject {
+			margin-bottom: 0;
+			padding-bottom: 5px;
+			
+			font: {
+				family: $font_alethia;
+				size: calc(18rem / 16);
+			}
+		}
+	}
+}
+
+.nft_polygon_block {
+	display: flex;
+}
+
+a.nft_create {
+	background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	padding-top: 1.1rem;
+	text-decoration: none;
+
+	font: {
+		family: $font_orbitron;
+		size: calc(20rem / 16);
+		weight: 700;
+	}
+
+	&:hover {
+		text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	}
+}
+
+.nft_counter_border_right {
+	border-right: solid 1px rgba(255, 255, 255, 0.26);
+}
+
