@@ -79,6 +79,7 @@ span.nft_brand {
 
 .nft_polygon_block {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 a.nft_create {
