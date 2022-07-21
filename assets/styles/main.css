@@ -298,4 +298,9 @@ body {
 a.nft_nodecor_white {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.nft_partners {
+  filter: opacity(50%);
+  margin: 100px 0 200px 0;
 }/*# sourceMappingURL=main.css.map */
