@@ -13,14 +13,13 @@
 
 	&_bid {
 		position: absolute;
-		top: 360px;
-		right: 0;
 		width: 336px;
 		height: 181px;
+		top: 360px;
+		right: 0;
 		clip-path: polygon(0 46px, 0 181px, 336px 181px, 336px 0, 46px 0);
 		background: linear-gradient(110deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
 		backdrop-filter: blur(20px);
-		z-index: 0;
 	
 		border: {
 			bottom-left-radius: 8.84px;
@@ -30,13 +29,15 @@
 	}
 
 	&_bid1 {
+		position: absolute;
 		width: 100%;
 		height: 100%;
+		bottom: 0;
+		right: 0;
 		clip-path: polygon(2px 47px, 2px 179px, 334px 179px, 334px 2px, 47px 2px);
-		background: linear-gradient(90deg, rgba(255, 255, 255, .9) -1.52%, rgba(255, 255, 255, 0.24) 104.35%);
+		background: linear-gradient(90deg, rgba(255, 255, 255, 1) -1.52%, rgba(255, 255, 255, 0.24) 104.35%);
 		filter: opacity(10%);
 		padding: 28px 21px 20px 23px;
-		z-index: 1;
 	
 		border: {
 			bottom-left-radius: calc(8.84px * 1.6);
@@ -46,10 +47,12 @@
 	}
 
 	&_bid_details {
+		position: absolute;
+		bottom: 108px;
+		right: 21px;
 		margin: 0;
 		width: 292px;
 		height: 134px;
-		z-index: 2;
 	}
 
 	&_artname {
