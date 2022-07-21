@@ -303,4 +303,7 @@ a.nft_nodecor_white {
 .nft_partners {
   filter: opacity(50%);
   margin: 100px 0 200px 0;
+}
+.nft_partners img {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
