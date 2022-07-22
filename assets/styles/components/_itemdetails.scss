@@ -131,3 +131,117 @@
 	}
 }
 // HERO Bid Description Details END
+
+// NFT Top Now Bid Description Details END
+.nft_topnow {
+	img {
+		max-width: 437.76px;
+		max-height: auto;
+	}
+
+	&_bid_border {
+		width: 100%;
+		height: auto;
+		padding: 2.88px;
+		background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0));
+	}
+
+	&_bid_details {
+		position: relative;
+		margin: 0;
+		padding: 20px;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.24));
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			filter: blur(10px) opacity(0.2);
+			margin: -20px;
+		}
+	}
+
+	&_artname {
+		font: {
+			family: $font_rajdhani;
+			size: calc(23.04rem / 16);
+			weight: 700;
+		}
+
+		line-height: calc(46.08rem / 16);
+	}
+
+	&_nickname {
+		font: {
+			family: $font_rajdhani;
+			size: calc(20.16rem / 16);
+			weight: 600;
+		}
+
+		line-height: calc(46.08rem / 16);
+	}
+
+	&_theme_title {
+		font: {
+			family: $font_rajdhani;
+			size: calc(14.4rem / 16);
+			weight: 600;
+		}
+
+		line-height: calc(46.08rem / 16);
+		margin: 10px 0 -10px 0;
+	}
+
+	&_logo_ethereum {
+		margin-left: -4px;
+	}
+
+	&_price_ethereum {
+		font: {
+			family: $font_orbitron;
+			size: calc(12.66rem / 16);
+			weight: 700;
+		}
+
+		padding: {
+			left: 2px;
+			right: 6px;
+		}
+	}
+
+	&_price_usd {
+		font: {
+			family: $font_rajdhani;
+			size: calc(14.4rem / 16);
+			weight: 400;
+		}
+	}
+
+	&_auction_time {
+		font: {
+			family: $font_rajdhani;
+			size: calc(23.04rem / 16);
+			weight: 600;
+		}
+
+		line-height: calc(46.08rem / 16);
+		margin: -10px 0 0 0;
+	}
+
+	&_auction_time_unit {
+		font: {
+			family: $font_rajdhani;
+			size: calc(14.4rem / 16);
+			weight: 500;
+		}
+
+		line-height: calc(46.08rem / 16);
+		margin: -17px 0 0 0;
+	}
+}
+// NFT Top Now Bid Description Details END

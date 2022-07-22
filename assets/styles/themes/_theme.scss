@@ -6,6 +6,7 @@ body {
 	background: {
 		color: rgb(1, 32, 76);
 		image: url('../img/bg.jpg');
+		// image: url('../img/bg_hero.png');
 		position: center top;
 		repeat: no-repeat;
 		size: cover;
@@ -17,11 +18,18 @@ a.nft_nodecor_white {
 	text-decoration: none;
 }
 
-.nft_partners {
-	filter: opacity(50%);
-	margin: 100px 0 200px 0;
+.nft_white {
+	color: rgba(255, 255, 255, 1);
+}
 
-	img {
-		max-width: 100%;
+h2,
+span.nft_view_all {
+	color: rgba(255, 255, 255, 1);
+	margin: 0;
+
+	font: {
+		family: $font_orbitron;
+		size: calc(26.53rem / 16);
+		weight: 700;
 	}
 }

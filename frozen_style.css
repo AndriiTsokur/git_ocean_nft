@@ -1,0 +1,77 @@
+html, body {
+	height: 100vh;
+}
+
+body {
+	background-image: url('assets/img/bg_hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.polygon_blured {
+	width: 336px;
+	height: 181px;
+	background: inherit;
+	border-radius: 8.84px;
+	position: absolute;
+	clip-path: polygon(0 46px, 0 181px, 336px 181px, 336px 0, 46px 0);
+	overflow: hidden;
+}
+
+.polygon_blured::before {
+	position: absolute;
+	content: '';
+	background: inherit;
+	width: 386px;
+	height: 231px;
+	top: -25px;
+	left: -25px;
+	box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+	filter: blur(10px);
+	border-radius: 8.84px;
+	clip-path: polygon(0 46px, 0 231px, 386px 231px, 386px 0, 46px 0);
+}
+
+.polygon_gradient {
+	position: absolute;
+	width: 336px;
+	height: 181px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	clip-path: polygon(0 46px, 0 181px, 336px 181px, 336px 0, 46px 0);
+	border-width: 4px;
+	border-style: solid;
+	border-image: linear-gradient(to right, rgba(0, 0, 139, .5), rgba(153, 50, 204, .5)) 1;
+}
+
+.polygon_gradient::before {
+	position: absolute;
+	content: '';
+	background: linear-gradient(to left, rgba(0, 0, 139, 1), rgba(153, 50, 204, 1));
+	width: 386px;
+	height: 231px;
+	left: 0;
+	top: 0;
+	filter: opacity(0.5);
+}
+
+.content {
+	position: absolute;
+	/* top: 15px;
+	left: 15px; */
+	padding: 15px;
+}
+
+h1 {
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 900;
+	font-size: 1.25rem;
+	text-align: right;
+}
