@@ -382,32 +382,24 @@ a.nft_create:hover {
 }
 
 .nft_topnow img {
-  max-width: 438px;
-  height: auto;
+  max-width: 420px;
 }
 .nft_topnow_bid_blured {
-  width: 100%;
+  width: 420px;
   height: 236px;
-  background: inherit;
   position: relative;
-  overflow: hidden;
 }
 .nft_topnow_bid_blured::before {
   position: absolute;
   content: "";
-  background: inherit;
-  width: 488px;
-  height: 286px;
-  top: -25px;
-  left: -25px;
-  box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  width: 420px;
+  height: 236px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .nft_topnow_bid_gradient {
   position: absolute;
-  width: 438px;
+  width: 420px;
   height: 236px;
   overflow: hidden;
   display: flex;
@@ -422,17 +414,17 @@ a.nft_create:hover {
   position: absolute;
   content: "";
   background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.24));
-  width: 488px;
-  height: 286px;
-  left: 0;
-  top: 0;
-  filter: opacity(0.1);
+  width: 430px;
+  height: 246px;
+  left: -5px;
+  top: -5px;
+  filter: opacity(0.2);
 }
 .nft_topnow_bid_content {
   position: absolute;
   width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
 }
 .nft_topnow_artname {
   font-family: "Rajdhani", sans-serif;
