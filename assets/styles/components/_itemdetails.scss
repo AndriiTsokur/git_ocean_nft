@@ -11,45 +11,74 @@
 		z-index: -1;
 	}
 
-	&_bid {
-		position: absolute;
-		top: 360px;
-		right: 0;
+	&_bid_polygon_blured {
 		width: 336px;
 		height: 181px;
+		background: inherit;
+		border-radius: 8px;
+		position: absolute;
 		clip-path: polygon(0 46px, 0 181px, 336px 181px, 336px 0, 46px 0);
-		background: linear-gradient(110deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-		backdrop-filter: blur(20px);
-		z-index: 0;
-	
-		border: {
-			bottom-left-radius: 8.84px;
-			bottom-right-radius: 8.84px;
-			top-right-radius: 8.84px;
+		overflow: hidden;
+		top: 360px;
+		right: 0;
+
+		&::before {
+			position: absolute;
+			content: '';
+			background: inherit;
+			width: 336px;
+			height: 181px;
+			box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+			filter: blur(10px);
+			border-radius: 8px;
+			clip-path: polygon(0 46px, 0 181px, 336px 181px, 336px 0, 46px 0);
+			backdrop-filter: blur(10px);
 		}
 	}
 
-	&_bid1 {
-		width: 100%;
-		height: 100%;
-		clip-path: polygon(2px 47px, 2px 179px, 334px 179px, 334px 2px, 47px 2px);
-		background: linear-gradient(90deg, rgba(255, 255, 255, .9) -1.52%, rgba(255, 255, 255, 0.24) 104.35%);
-		filter: opacity(10%);
-		padding: 28px 21px 20px 23px;
-		z-index: 1;
-	
+	&_bid_polygon_gradient {
+		position: absolute;
+		width: 335px;
+		height: 181px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		clip-path: polygon(0 46px, 0 181px, 335px 181px, 335px 0, 46px 0);
 		border: {
-			bottom-left-radius: calc(8.84px * 1.6);
-			bottom-right-radius: calc(8.84px * 1.6);
-			top-right-radius: calc(8.84px * 1.6);
+			width: 2px;
+			style: solid;
+			image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)) 1;
+		}
+	
+		&::before {
+			position: absolute;
+			content: '';
+			background: linear-gradient(to right, rgba(153, 50, 204, 0.5), rgba(255, 255, 255, 0.2));
+			width: 335px;
+			height: 181px;
+			left: 0;
+			top: 0;
+			filter: opacity(.5);
 		}
 	}
 
-	&_bid_details {
+	&_bid_content {
 		margin: 0;
 		width: 292px;
 		height: 134px;
-		z-index: 2;
+		z-index: 1;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 65px;
+			height: 2px;
+			top: 21px;
+			left: -11px;
+			transform: rotate(-45deg);
+			background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.28));
+		}
 	}
 
 	&_artname {
@@ -58,7 +87,6 @@
 			size: calc(17.69rem / 16);
 			weight: 700;
 		}
-
 		line-height: calc(35.37rem / 16);
 	}
 
@@ -68,7 +96,6 @@
 			size: calc(15.48rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(35.37rem / 16);
 	}
 
@@ -78,7 +105,6 @@
 			size: calc(11.05rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(35.37rem / 16);
 		margin: 10px 0 -10px 0;
 	}
@@ -93,7 +119,6 @@
 			size: calc(9.72rem / 16);
 			weight: 700;
 		}
-
 		padding: {
 			left: 2px;
 			right: 6px;
@@ -114,7 +139,6 @@
 			size: calc(17.69rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(35.37rem / 16);
 		margin: -10px 0 0 0;
 	}
@@ -125,7 +149,6 @@
 			size: calc(11.05rem / 16);
 			weight: 500;
 		}
-
 		line-height: calc(35.37rem / 16);
 		margin: -17px 0 0 0;
 	}
@@ -135,35 +158,60 @@
 // NFT Top Now Bid Description Details END
 .nft_topnow {
 	img {
-		max-width: 437.76px;
-		max-height: auto;
-	}
-
-	&_bid_border {
-		width: 100%;
+		max-width: 438px;
 		height: auto;
-		padding: 2.88px;
-		background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0));
 	}
 
-	&_bid_details {
+	&_bid_blured {
+		width: 100%;
+		height: 236px;
+		background: inherit;
 		position: relative;
-		margin: 0;
-		padding: 20px;
 		overflow: hidden;
 
-		&:before {
-			content: '';
+		&::before {
 			position: absolute;
-			background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.24));
-			z-index: -1;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			filter: blur(10px) opacity(0.2);
-			margin: -20px;
+			content: '';
+			background: inherit;
+			width: 488px;
+			height: 286px;
+			top: -25px;
+			left: -25px;
+			box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+			filter: blur(5px);
+			backdrop-filter: blur(5px);
 		}
+	}
+
+	&_bid_gradient {
+		position: absolute;
+		width: 438px;
+		height: 236px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 3px;
+		border-style: solid;
+		border-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)) 1;
+		
+		&::before {
+			position: absolute;
+			content: '';
+			background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.24));
+			width: 488px;
+			height: 286px;
+			left: 0;
+			top: 0;
+			filter: opacity(0.1);
+		}
+	}
+
+	&_bid_content {
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 20px;
 	}
 
 	&_artname {
@@ -172,7 +220,6 @@
 			size: calc(23.04rem / 16);
 			weight: 700;
 		}
-
 		line-height: calc(46.08rem / 16);
 	}
 
@@ -182,7 +229,6 @@
 			size: calc(20.16rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(46.08rem / 16);
 	}
 
@@ -192,7 +238,6 @@
 			size: calc(14.4rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(46.08rem / 16);
 		margin: 10px 0 -10px 0;
 	}
@@ -207,7 +252,6 @@
 			size: calc(12.66rem / 16);
 			weight: 700;
 		}
-
 		padding: {
 			left: 2px;
 			right: 6px;
@@ -228,7 +272,6 @@
 			size: calc(23.04rem / 16);
 			weight: 600;
 		}
-
 		line-height: calc(46.08rem / 16);
 		margin: -10px 0 0 0;
 	}
@@ -239,7 +282,6 @@
 			size: calc(14.4rem / 16);
 			weight: 500;
 		}
-
 		line-height: calc(46.08rem / 16);
 		margin: -17px 0 0 0;
 	}

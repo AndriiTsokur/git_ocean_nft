@@ -14,7 +14,7 @@
 	clip-path: polygon(0 22px, 0 65px, 212px 65px, 254px 43px, 254px 0, 42px 0);
 	width: 254px;
 	height: 65px;
-	background: linear-gradient(-272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+	background: linear-gradient(to right, #FFA6FA 47.49%, #3C79D5 98.81%);
 	border-bottom-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -26,11 +26,18 @@
 	top: 0;
 	left: 0;
 	clip-path: polygon(2px 23px, 2px 63px, 211px 63px, 252px 42px, 252px 2px, 42px 2px);
-	background: linear-gradient(92.23deg, #406AFF 0%, #3BACE2 0%, #B936EE 50%, #FF56F6 79%);
+	background: linear-gradient(to right, #406AFF 0%, #3BACE2 0%, #B936EE 50%, #FF56F6 79%);
 	border-bottom-left-radius: 10px;
 	border-top-right-radius: 10px;
 	display: flex;
 	text-align: right;
+
+	&:hover {
+		animation: gradient 3s ease infinite;
+		transform: translate3d(0, 0, 0);
+		background-size: 200% 200%;
+		transition: 0.5s;
+	}
 }
 
 .nft_explore {
@@ -70,6 +77,13 @@
 		padding: 0;
 		align-items: center;
 
+		&:hover {
+			animation: gradient 3s ease infinite;
+			transform: translate3d(0, 0, 0);
+			background-size: 200% 200%;
+			transition: 0.5s;
+		}
+
 		&_border {
 			width: 119.39px;
 			height: 37.59px;
@@ -101,6 +115,13 @@
 		padding: 0;
 		align-items: center;
 
+		&:hover {
+			animation: gradient 3s ease infinite;
+			transform: translate3d(0, 0, 0);
+			background-size: 200% 200%;
+			transition: 0.5s;
+		}
+
 		&_border {
 			width: 155.52px;
 			height: 48.96px;
@@ -111,3 +132,17 @@
 	}
 }
 // NFT Top Now PLACE BID button - END
+
+// Common buttons' gradient animation - START
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+// Common buttons' gradient animation - END
