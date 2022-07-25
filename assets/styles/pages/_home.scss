@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px) {
+	.nft_hero_bid {
+		&_mask svg {
+			width: 334px;
+		}
+
+		&_polygon_blured {
+			left: 55%;
+			top: 77%;
+			transform: translate(-45%, -23%);
+		}
+	}
+}

@@ -1,5 +1,10 @@
 // HERO Bid Description Details START
 .nft_hero {
+	&_bid_mask svg {
+		width: 402px;
+		height: 478px;
+	}
+
 	&_bid_shadow {
 		float: right;
 		margin: -140px 0 0 0;
